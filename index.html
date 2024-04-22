@@ -41,22 +41,22 @@
         </div>
     </section>
     <!-- --------------------------------------------------------------------------------------------------------------- -->
-    <section id="profile">
+    <section id="profile1">
         <h2>Profile</h2>
-        <div class="profile-info">
+        <div class="profile-info1">
             <img src="images/shan_profile.jpg" alt="Your Profile Picture" width="300" height="200">
-            <div class="info">
-                <p><strong>Name - </strong> Shankar Mallesh</p>
-                <p><strong>Place - </strong> Bangalore</p>
-                <p><strong>DOB - </strong> 10-10-2001</p>
-                <p><strong>Nationality - </strong> India</p>
-                <p><strong>Email - </strong> shankar64bitcomputing@gmail.com</p>
-                <p><strong>LinkedIn - </strong><a href="https://www.linkedin.com/in/shankar-m-810106273"><u><b>View linkedIn profile</b></u></a></p>
-                <!-- <p><strong>GitHub - </strong><a href="https://github.com/batmanhasnolimits?tab=repositories"><u><b>View github profile</b></u></a></p> -->
-                <p><strong>HackerRank - </strong><a href="https://www.hackerrank.com/profile/Ismart_Shankar"><u><b>View hackerrank profile</b></u></a></p>
+            <div class="info1">
+                <p class="detail1"><strong>Name - </strong> Shankar Mallesh</p>
+                <p class="detail1"><strong>Place - </strong> Bangalore</p>
+                <p class="detail1"><strong>DOB - </strong> 10-10-2001</p>
+                <p class="detail1"><strong>Nationality - </strong> India</p>
+                <p class="detail1"><strong>Email - </strong> shankar64bitcomputing@gmail.com</p>
+                <p class="detail1"><strong>LinkedIn - </strong><a href="https://www.linkedin.com/in/shankar-m-810106273"><u><b>View LinkedIn profile</b></u></a></p>
+                <p class="detail1"><strong>HackerRank - </strong><a href="https://www.hackerrank.com/profile/Ismart_Shankar"><u><b>View HackerRank profile</b></u></a></p>
             </div>
         </div>
     </section>
+    
     <!-- --------------------------------------------------------------------------------------------------------------- -->
 
     <section id="qualification">
@@ -146,6 +146,7 @@
             <li>Flutter</li>
             <li>Rest API</li>
             <li>Json</li>
+            <li>Agile</li>
             <li>Dart</li>
             <li>Python</li>
             <li>Cross-platform development</li>
@@ -259,8 +260,14 @@
     </section>
     <!-- --------------------------------------------------------------------------------------------------------------- -->
 
-    <footer>
-        <h5>&copy; 2023 SHANKAR's blog. All rights reserved.</h5>
+    <footer style="background-color: #000; color: #fff; text-align: center; padding: 10px;">
+        <h5 style="margin: 0; padding: 0;">&copy; <span id="currentYear"></span> SHANKAR's blog. All rights reserved.</h5>
     </footer>
+    
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+    
+    
 </body>
 </html>
