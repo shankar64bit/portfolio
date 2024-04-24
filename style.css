@@ -60,8 +60,8 @@ header h1 {
 }
 
 .profile-info1 img {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 480px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 20px;
@@ -73,10 +73,10 @@ header h1 {
 }
 
 .detail1 {
-    border: 1px solid #ccc;
+    border: 1.3px solid #1f786f;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 
