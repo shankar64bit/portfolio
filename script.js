@@ -1,2 +1,15 @@
-// You can use JavaScript to dynamically load and display blog posts
-// from a data source, e.g., JSON or a CMS.
+// scripts.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('nav ul li a');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            window.scrollTo({
+                top: target.offsetTop - 50,
+                behavior: 'smooth'
+            });
+        });
+    });
+});

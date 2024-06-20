@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Shankar</title>
+    <link rel="icon" href="images/1code.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Include Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="work" class="section">
+        <div class="container">
+            <h2>Work</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#">View project</a>
+                </div>
+                <div class="project">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of the project.</p>
+                    <a href="#">View project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 10px;">
+        <h5 style="margin: 0; padding: 0;">&copy; <span id="currentYear"></span> All rights reserved.</h5>
+    </footer>
+    
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

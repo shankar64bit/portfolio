@@ -1,227 +1,184 @@
-/* Reset some default styles */
-body, ul, h1, h2, p {
+body {
+    font-family: "Roboto Mono", monospace;
     margin: 0;
     padding: 0;
+    background-color: #121212; /* Figma-like dark background color */
+    color: #ffffff; /* Ensure text is readable on dark background */
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: rgb(24, 25, 25);
-    margin: 0;
-}
-
-/* ---------------------------------------------------------------- */
-
+/* Header styling */
 header {
-    background: #bbb;
+    background: #121212;
     color: #fff;
-    text-align: center;
-    padding: 20px;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.header-content {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-header h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.quote {
-    font-style: italic;
-    font-size: 1.2em;
-    color: #bbb;
-}
-
-/* Updated Skill UI with checkmark icon */
-.arrow-list {
+/* Navigation styling */
+/* header nav ul {
     list-style: none;
-    padding-left: 0;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
 }
 
-.arrow-list li::before {
-    content: "\27AB"; /* Unicode checkmark character */
-    margin-right: 10px;
-    color: #000000; /* Change color if needed */
+header nav ul li {
+    margin: 0 1rem;
 }
 
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    position: relative;
+} */
 
-/* ---------------------------------------------------------------- */
+/* Underline effect on hover */
+header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Gradient text styling */
+h4 {
+    background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 20%);
+    -webkit-background-clip: text;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 25px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
 
 .profile-info1 {
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+    margin-left: 70%;
+    margin-top: -300px;
 }
 
 .profile-info1 img {
-    width: 270px;
-    height: 480px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 390px;
+    height: 400px;
     margin-right: 20px;
 }
 
-.info1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.detail1 {
-    border: 1.3px solid #1f786f;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 13px;
-}
-
-
-/* ---------------------------------------------------------------- */
-
-
-
-section {
-    text-align: justify;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}
-
-/* Profile info container */
-.profile-info {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-/* Profile image */
-.profile-info img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Information container */
-.info {
-    margin-left: 20px;
-    font-size: 16px;
-}
-
-/* Individual information items */
-.info p {
-    margin: 8px 0;
-}
-
-/* Media query for mobile view */
-@media (max-width: 767px) {
-    .profile-info {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .info {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-}
-
-/* ---------------------------------------------------------------- */
-
-/* Navigation styles */
-nav {
-    background-color: white;
-    padding: 10px 0;
-    text-align: center;
-}
 
 nav ul {
     list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1em;
-}
-
-/* ---------------------------------------------- */
-
-/* Add this to your existing CSS file */
-
-.experience-item {
-    margin-bottom: 20px;
-}
-
-.experience-item h3 {
-    color: rgb(0, 41, 39);
-    margin-bottom: 5px;
-}
-
-.experience-item p {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.experience-item span {
-    display: block;
-    font-weight: bold;
-    color: #3d3c3c;
-}
-
-/* Contact Section Styles */
-
-#contact {
-    background-color: white;
-    color: black;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-#contact p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-/* Responsive Design for Contact Section */
-@media (max-width: 767px) {
-    #contact {
-        margin: 10px;
-    }
-
-    #contact h2 {
-        font-size: 24px;
-    }
-
-    #contact p {
-        font-size: 16px;
-    }
-}
-
-/* ---------------------------------------------------------------- */
-
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
+    display: flex;
+    justify-content: end;
+    margin: 0;
     padding: 10px;
 }
 
-footer p {
-    font-size: 14px;
+nav ul li.myname {
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 110px;
 }
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 8rem 1rem;
+    margin-top: 4rem;
+    color: rgb(246, 246, 246);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.project a:hover {
+    background: #2c6774;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background: #555;
+}
+
+footer {
+    background: #121212;
+    color: #fff;
+    text-align: right;
+    padding: 0.01rem 0; /* Reduced padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
