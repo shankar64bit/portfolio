@@ -140,10 +140,37 @@ nav ul li a {
 }
 
 .project-image img {
-    max-width: 300px;
+    max-width: 800px;
     height: auto;
-    border-radius: 6%;
+    border-radius: 5%;
+    margin-left: 4rem;
+    margin-top: 4rem;
 }
+/* --------------------------------------- */
+.resumes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resume-image1 img {
+    border-radius: 5%;
+    margin-left: 20rem;
+    margin-top: -10rem;
+}
+
+.resume-image2 img {
+    border-radius: 5%;
+    margin-left: 50rem;
+    margin-top: -0rem;
+}
+
 
 .project h3 {
     margin-top: 0;
@@ -189,5 +216,70 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .profile-info1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    h4 {
+        background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+        -webkit-background-clip: text;
+        letter-spacing: 1px;
+        font-style: italic;
+        font-size: 25px;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .profile-info1 img {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-details, .project-image {
+        max-width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem 0;
+    }
 }
 
