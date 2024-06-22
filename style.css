@@ -208,6 +208,24 @@ nav ul li a {
     color: #000;
 }
 
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item a {
+    color: aqua;
+    text-decoration: none;
+}
+
 footer {
     background: #121212;
     color: #fff;
@@ -287,6 +305,19 @@ footer {
     .resume-image1, .resume-image2 {
         display: block;
         width: 100%;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-icon {
+        margin-bottom: 0.5rem;
     }
 
     footer {
