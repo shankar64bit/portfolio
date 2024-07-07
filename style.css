@@ -243,6 +243,13 @@ footer {
         padding: 0 1rem;
     }
 
+    .quotes {
+        margin-top: 0rem;
+        margin-left: 2rem;
+        margin-bottom: 0rem;
+        margin-right: 2rem;
+    }
+
     header nav ul {
         flex-direction: column;
         align-items: flex-start;
