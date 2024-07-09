@@ -123,6 +123,8 @@ nav ul li a {
     text-align: left;
 }
 
+/* ------------------------------Work-start-------------------------------- */
+
 .projects {
     display: flex;
     flex-direction: column;
@@ -140,29 +142,11 @@ nav ul li a {
 }
 
 .project-image img {
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
     border-radius: 5%;
     margin-left: 4rem;
     margin-top: 4rem;
-}
-/* --------------------------------------- */
-.resumes {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.resume {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.resume-image1 img {
-    border-radius: 5%;
-    margin-left: 20rem;
-    margin-top: -14rem;
 }
 
 .project h3 {
@@ -201,6 +185,65 @@ nav ul li a {
     color: #000;
 }
 
+.project-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.back-to-work {
+    margin-right: auto;
+    font-size: 1rem;
+    margin-left: 110px;
+}
+
+.back-to-work a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #30e3ff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;    
+}
+
+.back-to-work a:hover {
+    background-color: #30e3ff;
+    color: #000;
+}
+
+
+/* ------------------------------Resumes-start-------------------------------- */
+.resumes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resume-image1 img {
+    border-radius: 5%;
+    margin-left: 20rem;
+    margin-top: -14rem;
+}
+
+/* ------------------------------Contact-start-------------------------------- */
 
 .contact-info {
     display: flex;
@@ -229,7 +272,7 @@ footer {
     bottom: 0;
 }
 
-/* ----------------------------------------------------------------------------- */
+/* --------------------------------MOBILE-------------------------------- */
 
 @media (max-width: 768px) {
     body {
@@ -244,14 +287,15 @@ footer {
         padding: 0 3rem 0 0rem;
     }
 
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
+    header nav ul .myname {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1rem;
+        text-wrap: wrap;
     }
 
     header nav ul li {
-        margin: 0.5rem 0;
+        margin: 0.5rem 1rem;
     }
 
     .profile-info1 {
@@ -268,7 +312,6 @@ footer {
         letter-spacing: 1px;
         font-style: italic;
         font-size: 20px;
-        letter-spacing: 1px;
         margin: 0.5rem 0;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -286,29 +329,40 @@ footer {
         text-align: center;
     }
 
-    .projects {
-        flex-direction: column;
-    }
-
     .project {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
     }
 
-    .project-details, .project-image {
+    .project-details {
         max-width: 100%;
+    }
+
+    .project-image img {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .back-to-work {
+        margin-left: 10px;
+    }
+
+    .back-to-work a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .resume-image1, .resume-image2 {
+        display: block;
+        width: 100%;
     }
 
     .resume-image1 img, .resume-image2 img {
         width: 100%;
         height: auto;
         margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .resume-image1, .resume-image2 {
-        display: block;
-        width: 100%;
+        margin-top: 20px;
     }
 
     .contact-info {
@@ -320,6 +374,8 @@ footer {
         flex-direction: row;
         align-items: center;
         margin-bottom: 1rem;
+        width: 100%;
+        justify-content: center;
     }
 
     .contact-icon {
@@ -327,7 +383,7 @@ footer {
     }
 
     footer {
-        text-align: center;
-        padding: 1rem 0;
+        padding: 0.8rem 0;
+        margin-left: -1rem;
     }
 }
