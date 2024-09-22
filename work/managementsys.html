@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managementsys - Shankar</title>
+    <link rel="icon" href="../images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Enhanced button styling */
+        .view-design-button {
+            background: linear-gradient(90deg, rgba(255,0,150,1) 10%, rgba(0,204,255,1) 100%);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Hover effect for button */
+        .view-design-button:hover {
+            background-color: #f77f00;
+            transform: translateY(-2px);
+        }
+
+        /* Arrow icon SVG styling */
+        .view-design-button svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+            transition: transform 0.3s ease;
+        }
+
+        .view-design-button:hover svg {
+            transform: translateX(5px);
+        }
+
+        /* Adjusting button's position next to the title */
+        .project-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive behavior for small screens */
+        @media (max-width: 768px) {
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .view-design-button {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="back-to-work"><a href="../work.html">← Back to Work</a></div> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project-details" class="section">
+        <div class="container">
+            <div class="project-header">
+                <h2 style="flex: 1;">Management System Application</h2>
+                
+                <!-- Beautifully styled button with arrow icon -->
+                <a href="https://managementsystem-3c2ca.firebaseapp.com" target="_blank" class="view-design-button">
+                    Application Demo
+                    <!-- Inline SVG for the arrow icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M13 5l7 7-7 7M5 12h14"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="project-content">
+                <img src="../images/managementsys/managementsys_details.png" alt="Spiderweb Forecast" class="project-image">
+                <div class="project-description">
+                    <p>The Student Assessment Management System is designed to streamline the process of creating, administering, and evaluating academic assessments. With a sleek and intuitive user interface, the app allows students to access and complete assignments, while enabling teachers to create assessments, manage question banks, and track student progress. Its functionality ensures ease of use and efficiency for educational institutions, particularly those needing a comprehensive platform to manage various aspects of student evaluation.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>User Authentication: Separate secure login systems for students and teachers/administrators.</li>
+                        <li>Student Dashboard: Access to ongoing and completed assessments, with the ability to view assignment history.</li>
+                        <li>Teacher Dashboard: Tools for creating new assessments, managing question banks, and viewing student submissions.</li>
+                        <li>Assessment Creation: Customizable options for assessment title, type, duration, and number of questions.</li>
+                        <li>Multiple Question Types: Support for various formats including short answer and multiple-choice questions.</li>
+                        <li>Question Bank: A repository for storing and organizing assessment questions for reuse.</li>
+                        <li>Assessment Details: Clear presentation of assessment information including title, type, duration, and question count.</li>
+                        <li>Submission System: Allows students to submit completed assessments directly through the app.</li>
+                        <li>Responsive Design: Optimized for various devices, ensuring a consistent user experience across platforms.</li>
+                    </ul>
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>Flutter: Cross-platform mobile development framework, evident from the assessment titles in the image.</li>
+                        <li>Firebase: Backend integration for authentication and management system data storage.</li>
+                        <li>UI Design: Custom-designed interface with a purple color scheme for a modern, clean look.</li>
+                        <li>Authentication System: Implemented for secure access to student and teacher/admin accounts.</li>
+                        <li>Version Control: Likely uses a system like Git for collaborative development (inferred based on standard practices).</li>
+                    </ul>                   
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 10px;">
+        <h5 style="margin: 0; padding: 0;">ShankarPortfolio &copy; <span id="currentYear"></span></h5>
+    </footer>
+    
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
