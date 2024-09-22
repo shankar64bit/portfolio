@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma design - Shankar</title>
+    <link rel="icon" href="../images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Enhanced button styling */
+        .view-design-button {
+            background: linear-gradient(90deg, rgba(255,0,150,1) 10%, rgba(0,204,255,1) 100%);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Hover effect for button */
+        .view-design-button:hover {
+            background-color: #f77f00;
+            transform: translateY(-2px);
+        }
+
+        /* Arrow icon SVG styling */
+        .view-design-button svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+            transition: transform 0.3s ease;
+        }
+
+        .view-design-button:hover svg {
+            transform: translateX(5px);
+        }
+
+        /* Adjusting button's position next to the title */
+        .project-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive behavior for small screens */
+        @media (max-width: 768px) {
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .view-design-button {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="back-to-work"><a href="../work.html">← Back to Work</a></div> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project-details" class="section">
+        <div class="container">
+            <div class="project-header">
+                <h2 style="flex: 1;">Figma UI/UX Design Application</h2>
+                
+                <!-- Beautifully styled button with arrow icon -->
+                <a href="https://www.figma.com/design/BdjqLFa5uyFJOGB5ukKGYB/Stacker?node-id=0-1&t=Zckks8C0Q3OmN2gL-1" target="_blank" class="view-design-button">
+                    View Figma Design
+                    <!-- Inline SVG for the arrow icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M13 5l7 7-7 7M5 12h14"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="project-content">
+                <img src="../images/figma_ui_ux/figma_stacker.png" alt="ARK Business" class="project-image">
+                <div class="project-description">
+                    <p>The Figma design app showcased here streamlines the creation of user-friendly interfaces for mobile and web applications. With a focus on intuitive user experience, it provides an engaging platform for users to seamlessly navigate between features such as account management, order tracking, and purchase functionality.</p>
+                    
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>User registration and login functionality</li>
+                        <li>Brand selection and preference management</li>
+                        <li>Coupon application and cart management</li>
+                        <li>Payment gateway with multiple options (e.g., GPay, Paytm, UPI)</li>
+                        <li>Order history and management</li>
+                        <li>Profile editing and direct application link access</li>
+                        <li>Help center and customer support access</li>
+                        <li>Settings management and account deletion option</li>
+                    </ul>
+
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>Figma for UI/UX design</li>
+                        <li>Flutter for cross-platform mobile development</li>
+                        <li>Firebase for backend integration</li>
+                        <li>REST APIs for server communication</li>
+                        <li>Responsive design to ensure smooth usage across devices</li>
+                        <li>Git for version control and collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 10px;">
+        <h5 style="margin: 0; padding: 0;">ShankarPortfolio &copy; <span id="currentYear"></span></h5>
+    </footer>
+    
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
