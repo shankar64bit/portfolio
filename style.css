@@ -285,7 +285,7 @@ nav ul li a {
     padding: 5px 15px; /* Padding around the text */
     border-radius: 15px; /* Rounded corners */
     z-index: 1000; /* Ensures it stays on top of other elements */
-    box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.5); /* White elevation effect */
+    box-shadow: 2px 3px 6px rgb(255, 255, 255); /* White elevation effect */
 }
 
 .contact-number a {
