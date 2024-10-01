@@ -276,6 +276,23 @@ nav ul li a {
     text-decoration: none;
 }
 
+.contact-number {
+    position: fixed; /* Fixed positioning to stay in view */
+    bottom: 40px; /* Distance from the bottom */
+    right: 40px; /* Distance from the right */
+    background: #000;
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 5px 15px; /* Padding around the text */
+    border-radius: 15px; /* Rounded corners */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.5); /* White elevation effect */
+}
+
+.contact-number a {
+    color: aqua; /* Link color */
+}
+
+
 footer {
     background: #121212;
     color: #fff;
