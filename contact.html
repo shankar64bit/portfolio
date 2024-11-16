@@ -1,171 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Shankar</title>
-    <link rel="icon" href="images/logo2.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        /* Modal styles */
-        .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgba(0, 0, 0, 0.4); 
-        }
-        .modal-content {
-            background: linear-gradient(to right, #121212, #00244e);
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        .close {
-            color: #ffffff; /* Set the close mark color to black */
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+      /* Modal styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        background: linear-gradient(to right, #121212, #00244e);
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .close {
+        color: #ffffff; /* Set the close mark color to black */
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
 
-        .close:hover,
-        .close:focus {
-            color: #000000; /* Ensure it stays black on hover/focus */
-            text-decoration: none;
-            cursor: pointer;
-        }
+      .close:hover,
+      .close:focus {
+        color: #000000; /* Ensure it stays black on hover/focus */
+        text-decoration: none;
+        cursor: pointer;
+      }
 
-
-        .modal-content p {
-            color: #ffffff;
-            font-size: 18px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-        .modal-content a {
-            color: #30e3ff;
-            font-weight: bold;
-        }
-        .employer-statement-button {
-            background-color: #121212;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .employer-statement-button:hover {
-            background-color: #30e3ff;
-            color: #121212;
-        }
+      .modal-content p {
+        color: #ffffff;
+        font-size: 18px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      }
+      .modal-content a {
+        color: #30e3ff;
+        font-weight: bold;
+      }
+      .employer-statement-button {
+        background-color: #121212;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .employer-statement-button:hover {
+        background-color: #30e3ff;
+        color: #121212;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-  <!-- Contact Number Position -->
-  <div class="contact-number">
-    <button id="openModalBtn" class="employer-statement-button"><u>Caution: For Recruiters Who Have Interviewed Me</u></button>
-    <p style="text-align: center; margin: 5px;">Contact Number: <a href="tel:+917795469980" style="color: #30e3ff; text-decoration: underline;">+91 7795469980</a></p>
-    <p style="text-align: center; margin: 0px;">Feel free to call me anytime,<a style="color: #30e3ff;"> 24/7!</a></p>
-    <p style="text-align: center; margin: 10px; font-weight: bold; color: #30e3ff;">Hasta la vista!</p>
-</div>
-
-
-<!-- Modal for employer statement -->
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p style="text-align: center; margin: 0; padding: 20px;">
-            This declaration is only for employers that have questioned my abilities during an interview and suspect I am impersonating someone else or using outside help to get employment with their company.
-        </p>
-        <p style="text-align: center; margin: 0; padding: 20px;">
-            I developed my portfolio from scratch, and all of the work you see in here and on my projects is entirely my own. I do not plagiarize or take credit for other people's work in order to get a position with your organization.
-        </p>
-        <p style="text-align: center; margin: 0; padding: 20px;">
-            Your job offer means nothing to me. Never judge a book just on its cover. Even if I don't get a job, I will always be true to myself.
-        </p>
-        <p style="text-align: center; margin: 0; padding: 20px;">
-            I am completely <a style="color: #30e3ff;">honest</a> and <a style="color: #30e3ff;">self-taught</a>.<br><a style="color: #30e3ff;"><u>#NoDrama</u></a>
-        </p>
+    <!-- Contact Number Position -->
+    <div class="contact-number">
+      <button id="openModalBtn" class="employer-statement-button">
+        <u style="font-size: 13px"
+          >Note : Only For Recruiters Who Have Interviewed Me</u
+        >
+      </button>
+      <p style="text-align: center; margin: 5px">
+        Contact Number:
+        <a
+          href="tel:+917795469980"
+          style="color: #30e3ff; text-decoration: underline"
+          >+91 7795469980</a
+        >
+      </p>
+      <p style="text-align: center; margin: 0px">
+        Feel free to call me anytime,<a style="color: #30e3ff"> 24/7!</a>
+      </p>
+      <p
+        style="
+          text-align: center;
+          margin: 10px;
+          font-weight: bold;
+          color: #30e3ff;
+        "
+      >
+        Hasta la vista!
+      </p>
     </div>
-</div>
 
-<section id="contact" class="section">
-    <div class="container">
+    <!-- Modal for employer statement -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p style="text-align: center; margin: 0; padding: 20px">
+          This declaration is only for employers that have questioned my
+          abilities during an interview and suspect I am impersonating someone
+          else or using outside help to get employment with their company.
+        </p>
+        <p style="text-align: center; margin: 0; padding: 20px">
+          I developed my portfolio from scratch, and all of the work you see in
+          here and on my projects is entirely my own. I do not plagiarize or
+          take credit for other people's work in order to get a position with
+          your organization.
+        </p>
+        <p style="text-align: center; margin: 0; padding: 20px">
+          Your job offer means nothing to me. Never judge a book just on its
+          cover. Even if I don't get a job, I will always be true to myself.
+        </p>
+        <p style="text-align: center; margin: 0; padding: 20px">
+          I am completely <a style="color: #30e3ff">honest</a> and
+          <a style="color: #30e3ff">self-taught</a>.<br /><a
+            style="color: #30e3ff"
+            ><u>#NoDrama</u></a
+          >
+        </p>
+      </div>
+    </div>
+
+    <section id="contact" class="section">
+      <div class="container">
         <u><h2>Contact</h2></u>
         <div class="contact-info">
-            <div class="contact-item">
-                <img src="images/socialmedia_logo/email.png" style="width: 40px; height: 40px; margin-right: 1.5rem;" alt="Email" class="contact-icon">
-                <p>Email <a href="mailto:shankar2space@gmail.com?subject=Subject%20Here&body=Body%20content%20here" target="_blank" style="color: #30e3ff;"><u>shankar2space@gmail.com</u></a></p>
-            </div>
-            <div class="contact-item">
-                <img src="images/socialmedia_logo/hr.png" style="width: 50px; height: 40px; margin-right: 1.5rem;" alt="HackerRank" class="contact-icon">
-                <p>HackerRank <a href="https://www.hackerrank.com/profile/Ismart_Shankar" target="_blank" style="color: #30e3ff;"><u>@Ismart_Shankar</u></a></p>
-            </div>
-            <div class="contact-item">
-                <img src="images/socialmedia_logo/linkedIn.png" style="width: 100px; height: 50px;" alt="LinkedIn" class="contact-icon">
-                <p>LinkedIn <a href="https://www.linkedin.com/in/shankarMallesh/" target="_blank" style="color: #30e3ff;"><u>shankarmallesh</u></a></p>
-            </div>
-            <div class="contact-item">
-                <img src="images/socialmedia_logo/git_hub.png" style="width: 100px; height: 50px;" alt="GitHub" class="contact-icon">
-                <p>GitHub <a href="https://github.com/shankar64bit" target="_blank" style="color: #30e3ff;"><u>shankar64bit</u></a></p>
-            </div>
+          <div class="contact-item">
+            <img
+              src="images/socialmedia_logo/email.png"
+              style="width: 40px; height: 40px; margin-right: 1.5rem"
+              alt="Email"
+              class="contact-icon"
+            />
+            <p>
+              Email
+              <a
+                href="mailto:shankar2space@gmail.com?subject=Subject%20Here&body=Body%20content%20here"
+                target="_blank"
+                style="color: #30e3ff"
+                ><u>shankar2space@gmail.com</u></a
+              >
+            </p>
+          </div>
+          <div class="contact-item">
+            <img
+              src="images/socialmedia_logo/hr.png"
+              style="width: 50px; height: 40px; margin-right: 1.5rem"
+              alt="HackerRank"
+              class="contact-icon"
+            />
+            <p>
+              HackerRank
+              <a
+                href="https://www.hackerrank.com/profile/Ismart_Shankar"
+                target="_blank"
+                style="color: #30e3ff"
+                ><u>@Ismart_Shankar</u></a
+              >
+            </p>
+          </div>
+          <div class="contact-item">
+            <img
+              src="images/socialmedia_logo/linkedIn.png"
+              style="width: 100px; height: 50px"
+              alt="LinkedIn"
+              class="contact-icon"
+            />
+            <p>
+              LinkedIn
+              <a
+                href="https://www.linkedin.com/in/shankarMallesh/"
+                target="_blank"
+                style="color: #30e3ff"
+                ><u>shankarmallesh</u></a
+              >
+            </p>
+          </div>
+          <div class="contact-item">
+            <img
+              src="images/socialmedia_logo/git_hub.png"
+              style="width: 100px; height: 50px"
+              alt="GitHub"
+              class="contact-icon"
+            />
+            <p>
+              GitHub
+              <a
+                href="https://github.com/shankar64bit"
+                target="_blank"
+                style="color: #30e3ff"
+                ><u>shankar64bit</u></a
+              >
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<footer style="text-align: center; padding: 10px;">
-    <h5 style="margin: 0; padding: 0;">ShankarPortfolio &copy; <span id="currentYear"></span></h5>
-</footer>
+    <footer style="text-align: center; padding: 10px">
+      <h5 style="margin: 0; padding: 0">
+        ShankarPortfolio &copy; <span id="currentYear"></span>
+      </h5>
+    </footer>
 
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("openModalBtn");
+      // Get the button that opens the modal
+      var btn = document.getElementById("openModalBtn");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
         modal.style.display = "block";
-    }
+      };
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
         modal.style.display = "none";
-    }
+      };
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
         if (event.target == modal) {
-            modal.style.display = "none";
+          modal.style.display = "none";
         }
-    }
+      };
 
-    // Set the current year in the footer
-    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-</script>
+      // Set the current year in the footer
+      document.getElementById("currentYear").innerHTML =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
